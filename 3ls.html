@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三力士</title>
+	<link rel="stylesheet" type="text/css" href="css/livevideo.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/newmain.css"/>
+<script type="text/javascript" src="js/canvasjs.min.js"></script>
+</head>
+<body>
+  <div class="header">
+      <div class="center header-center "><a href="/" style="float: left;padding-top: 8px;"><img src="/Public/Home/my/images/logo.png"></a>
+
+        <ul class="head-nav clearfix">
+            <li data-tip="首页">
+                <a href="###">
+                <div class="index-menu" data-tip="首页">
+                    <span>首页</span>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                <div class="index-menu" data-tip="财富大魔方">
+                  <span>财富大魔方</span>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                <div class="index-menu" data-tip="财服急送">
+                    <span>财服急送</span>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                <div class="index-menu" data-tip="财富课堂">
+                    <span>财富课堂</span>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                <div class="index-menu" data-tip="投资学院">
+                    <span>投资学院</span>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                <div class="index-menu" data-tip="名师殿堂">
+                    <span>名师殿堂</span>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                <div class="index-menu" data-tip="财富视界">
+                    <span>财富视界</span>
+                </div>
+                </a>
+            </li>
+            <li>
+                <a href="###">
+                <div class="index-menu" data-tip="帮助中心">
+                    <span>帮助中心</span>
+                </div>
+                </a>
+            </li>
+            <li id="hotnews">
+                <a href="###">
+                <div class="index-menu" data-tip="热点题材">
+                    <span>热点题材</span>
+                </div>
+                </a>
+                <ul class="drop-menu menu-4" id="newsmallnav">
+                    <li>
+                        <a href="###">首页</a>
+                        <span style="width: 30px;left:32px;"></span>
+                    </li>
+                    <li>
+                        <a href="index.html">热点题材</a>
+                        <span style="width: 63px;left:18px;"></span>
+                    </li>
+                    <li>
+                        <a href="1.2.html">资讯</a>
+                         <span style="width: 42px;left:30px;"></span>
+                    </li>
+                    <li>
+                        <a href="1.1.html">自选股</a>
+                        <span  style="width: 48px;left:26px;"></span>
+                    </li>
+                    <li>
+                        <a href="7x24.html">7x24热点直播</a>
+                        <span style="width: 102px;left:20px;"></span>
+                    </li>
+                    </ul>
+            </li>
+        </ul>
+
+        <div class="header-action right">
+        <a href="/login/index/url/http%253A%252F%252Fwww.maxtv.cn%252F.html">登录</a>|<a href="/login/reg/url/http%253A%252F%252Fwww.maxtv.cn%252F.html" class="no-mr">注册</a></div>      </div>
+    </div>
+<div class="medio-top">
+        <ul class="medio-top-nav" id="medio-top-nav">
+            <li>热点题材</li>
+            <li>选股</li>
+            <li>资讯</li>
+            <li>自选股</li>
+            <li style="width: 100px;">7x24热点直播</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    var navlist=document.getElementById("medio-top-nav");
+	var redian=document.getElementById("reddianticai");
+	redian.onmousemove=function(){
+		navlist.style.display="block";
+	}
+	navlist.onmouseleave=function(){
+        navlist.style.display=""
+	}
+    </script>
+<div class="slscenter" style="width: 1190px;margin: 0 auto;">
+	<ul class="medio-top-search pr">
+            <li class="left ml-15">首页</li>
+            <li class="left ml-15">&gt;</li>
+            <li class="left ml-15">三力士</li>
+    </ul>
+    <ul class="slscenter-sharesname">
+    	<li>
+    		<p>股票名称</p>
+    		<p>新闻条数<br /> 较昨天</p>
+    	</li>
+    	<li>
+    		<p class="pr">三力士<span></span> </p>
+    		<p>&nbsp;98637&nbsp;<span></span><br /><span>+8.88%</span></p>
+    	</li>
+    	<li>
+    		<p>所属题材</p>
+    		<p>聚合新闻</p>
+    		<p>股票介绍</p>
+    	</li>
+    	<li>
+    		<p>军民融合 </p>
+    		<p>这里是一条新闻</p>
+    		<p>这里展示股票的介绍</p>
+    	</li>
+    	<li id="shengxianji"></li>
+    	<div id="luzhi">
+    		<div>录播 </div>
+    		<div>直播</div>
+        </div>
+    </ul>
+    <script type="text/javascript">
+    var playvideo=document.getElementById("shengxianji");
+	var change=document.getElementById("luzhi");
+	playvideo.onmousemove=function(){
+		change.style.display="block";
+	}
+	change.onmouseleave=function(){
+        change.style.display=""
+	}
+    </script>
+    <div class="slscenter-numberofnews">
+    	<p class="header">锂电子的新闻条数</p>
+    	<div class="calendars-and-curves">
+    		<div class="calendars box">
+				<script src="js/laydate.js" type="text/javascript" charset="utf-8"></script>
+				<div class="demo6">
+					<span class="demo7"></span>
+				   <input readonly class="layinput" id="hello1" placeholder="请选择查看的日期">
+				   <div class="laydate-icon " onClick="laydate({elem: '#hello1'});" style="width:36px;display:inline-block;border:none;"></div>
+			</div>
+<script type="text/javascript">
+!function(){
+	laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+	laydate({elem: '#demo'});//绑定元素
+}();
+
+//日期范围限制
+var start = {
+    elem: '#start',
+    format: 'YYYY-MM-DD',
+    min: laydate.now(), //设定最小日期为当前日期
+    max: '2099-06-16', //最大日期
+    istime: true,
+    istoday: false,
+    choose: function(datas){
+         end.min = datas; //开始日选好后，重置结束日的最小日期
+         end.start = datas //将结束日的初始值设定为开始日
+    }
+};
+
+var end = {
+    elem: '#end',
+    format: 'YYYY-MM-DD',
+    min: laydate.now(),
+    max: '2099-06-16',
+    istime: true,
+    istoday: false,
+    choose: function(datas){
+        start.max = datas; //结束日选好后，充值开始日的最大日期
+    }
+};
+laydate(start);
+laydate(end);
+
+//自定义日期格式
+laydate({
+    elem: '#test1',
+    format: 'YYYY年MM月DD日',
+    festival: true, //显示节日
+    choose: function(datas){ //选择日期完毕的回调
+        alert('得到：'+datas);
+    }
+});
+
+//日期范围限定在昨天到明天
+laydate({
+    elem: '#hello3',
+    min: laydate.now(-1), //-1代表昨天，-2代表前天，以此类推
+    max: laydate.now(+1) //+1代表明天，+2代表后天，以此类推
+});
+</script>
+</div>
+
+  <div class="curves">
+    			<!--<div id="chartContainer" style="height: 300px; width: 100%;margin-top: 87px;"></div>-->
+    			<div id="main" style="width: 800px;height:400px;"></div>
+  </div>
+  <script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  var arrx=[0,1,2,3,4,5];
+  var arry=[12,34,565,343,43,43];
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+             title: {
+        text: ''
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['锂电池']
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : arrx
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'邮件营销',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:arry
+        }
+    ]
+        };
+
+        myChart.setOption(option);
+    </script>
+    	</div>
+    </div>
+<div class="xggg">
+	<p>相关个股</p>
+    <table border="" cellspacing="0" cellpadding="0">
+    	<tr>
+    		<th><span>股票名称</span></th>
+    		<th><span>驱动事件</span></th>
+    	</tr>
+    	<tr>
+    		<th>三力士</th>
+    		<th>生意社:7月22日国内环氧乙烷早间提示</th>
+    	</tr>
+    	<tr>
+    		<th>平安银行</th>
+    		<th>婉金女神</th>
+    	</tr>
+    	<tr>
+    		<th>波斯软件</th>
+    		<th>太阳能无人机首次试飞成功</th>
+    	</tr>
+    </table>
+</div>
+    <div class="slscenter-relatednews mt-30 mb-20">
+    	<p>相关新闻</p>
+    	<ul>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    		<li>
+    			<span>热度指数&nbsp;1888&nbsp;利好</span>
+    			<span>美元指数大幅下挫&nbsp;人民币中间调价256个基点</span>
+    			<span>9：30&nbsp;来源人民网</span>
+    		</li>
+    	</ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="center">
+    <div class="cooperation">
+    <div class="title">合作伙伴</div>
+    <ul>
+    	<li><a href="http://www.cctvfinance.com" target="_blank">CCTV证券资讯</a></li><li><a href="http://www.168cj.com/" target="_blank">迅视财经</a></li><li><a href="http://www.cnstock.com/" target="_blank">中国证券网</a></li><li><a href="http://www.secutimes.com/" target="_blank">证券时报</a></li><li><a href="http://www.hexun.com" target="_blank">和讯</a></li><li><a href="http://www.dxsvdy.com/" target="_blank">大学生微电影</a></li>			</ul><ul>
+    	<li><a href="http://v.ifeng.com/" target="_blank"> 凤凰视频</a></li><li><a href="http://www.hunantv.com/" target="_blank">芒果TV</a></li><li><a href="http://www.bug.cn/" target="_blank">穿帮网</a></li><li><a href="http://www.cs.com.cn/" target="_blank">中证网</a></li><li><a href="http://www.fenwoo.com" target="_blank">智慧蜂窝</a></li><li><a href="http://www.fenwoo.com" target="_blank">P2P理财</a></li>			</ul><ul>
+    	<li><a href="http://www.76money.com" target="_blank">骑牛财富</a></li><li><a href="http://www.cfi.cn/" target="_blank">中财网</a></li><li><a href="http://www.maxtv.cn/Classroom/index" target="_blank">在线课堂</a></li><li><a href="http://www.maxtv.cn/Wealth/managerList" target="_blank">财富管家</a></li><li><a href="http://www.maxtv.cn/Course/courseList" target="_blank">投资学院</a></li><li><a href="http://www.maxtv.cn/Magic/index" target="_blank">财富大魔方</a></li>			</ul><ul>
+    	<li><a href="http://www.maxtv.cn/Wvideo/wvideo" target="_blank">财经视频</a></li><li><a href="http://www.shzqt.com/" target="_blank">证券通</a></li>			</ul>		</div>
+    <div class="app">
+    <div class="title">微信公众号</div>
+    <div class="text-center"><img src="img/qr.jpg"></div>
+    <div class="text-center mt-10"><span>扫一扫,有惊喜</span></div>
+    </div>
+    <div class="app">
+    <div class="title">迈视财经APP下载</div>
+    <div class=""><img src="img/APP_ewm.jpg" width="150"></div>
+    <div class="text-center mt-10"><span>扫一扫,下载APP</span></div>
+    </div>
+    <div class="app">
+    <div class="title">新浪微博</div>
+    <div class="text-center"><img src="img/xlwb.jpg"></div>
+    <div class="text-center mt-10"><span>扫一扫,有惊喜</span></div>
+    </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <div class="center">
+    <div class="text-center">
+    <a href="/help/single/nid/78.html" target="_blank">关于迈视</a><a href="/help/single/nid/79.html" target="_blank">联系我们</a><a href="/help/single/nid/86.html" target="_blank">免责条款</a><a href="/help/single/nid/87.html" target="_blank">用户协议</a><a href="/help/single/nid/88.html" target="_blank">风险揭示</a><a href="/help/single/nid/89.html" target="_blank">招贤纳士</a><a href="/help/single/nid/91.html" target="_blank">资质证明</a><a href="/help/single/nid/93.html" target="_blank">迈视报导</a><a href="/help/single/nid/98.html" target="_blank">财富大魔方</a><a href="/help/single/nid/104.html" target="_blank">APP首页幻灯</a>
+    </div>
+    <div class="text-center">
+    <a href="/help/single/nid/91.html">经营性网站备案信息</a>
+    <a href="http://net.china.com.cn/index.htm" target="_blank">不良信息举报中心</a>
+    <a href="/help/single/nid/91.html" target="_blank">京ICP证 - 120713号</a>
+    <a href="/help/single/nid/91.html" target="_blank">广播电视节目制作经营许可证编号：（京）字第609号</a>
+    <a href="http://www.bj.cyberpolice.cn/index.do" target="_blank">网络110报警服务</a>
+    <a href="/help/single/nid/91.html#jww">京网文[2014]0335-055号</a>
+    <a href="##">京公网安备-110102000703</a>
+    <a href="/help/single/nid/91.html#stjmxkz" target="_blank">信息网络传播视听节目许可证0108258号</a></div>
+    <div class="text-center copyright">迈视传媒 maxtv.cn 版权所有 Copyright 2014 All Rights Reserved</div>
+    </div>
+</div>
+<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a>
+   <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#9C3&amp;text=分享到"></script>
+  <script type="text/javascript" charset="utf-8">
+   bShare.addEntry({
+    title: "",
+    url: "",
+    summary: "中国首家专业金融理财服务视频网",
+    pic: ""
+    });
+</script>
+   <!-- 返回顶部 -->
+    <div class="fixright">
+      <div>
+       <p class="shouyet fixrightt"></p>
+       <p class="fixrightz">首页</p>
+    </div>
+    <div>
+     <a href="#top"><p class="dingbut fixrightt"></p></a>
+     <p class="fixrightz"><a href="#top">顶部</a></p>
+    </div>
+  </div>
+</body>
+</html>
